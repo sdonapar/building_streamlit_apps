@@ -12,12 +12,14 @@
 
 </br>
 
-### The whole script `app.py` is rerun from top-to-bottom every time the user interacts with it
+### The whole script `app.py` is rerun from top-to-bottom every time the user interacts with it - [Example App](./counter_increment_app/app.py)
 
 </br>
 
-[Example App](./counter_increment_app/app.py)
+## Development
 
 </br>
+
+### You can see the changes immediately rendered in tbe browser and it is easy for the development
 
 [Home](./README.md)
