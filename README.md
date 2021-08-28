@@ -30,4 +30,4 @@
 
 1. [ Components tutorial by Fanilo Andrianasolo ]( https://streamlit-components-tutorial.netlify.app/introduction/ )
 2. [ Loading and caching of models and mutable objects ](https://discuss.streamlit.io/t/loading-and-caching-of-models-and-mutable-objects/94)
-3. [ Streamlit AgGrid Component] ( https://github.com/PablocFonseca/streamlit-aggrid )
+3. [ Streamlit AgGrid Component]( https://github.com/PablocFonseca/streamlit-aggrid )
