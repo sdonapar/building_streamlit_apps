@@ -1,6 +1,8 @@
 import streamlit as st
 import spacy
+from spacy import displacy
 import pandas as pd
+st.set_page_config(layout="wide")
 
 @st.cache(allow_output_mutation=True)
 def load_model(name):
@@ -22,10 +24,11 @@ my_sentence = st.text_input("Enter your sentence")
 if my_sentence:
     data = []
     doc = nlp(my_sentence)
-    for ent in doc.ents:
-        data.append((ent.text,ent.label_))
-    df = pd.DataFrame(data,columns=['Text','Entity']).set_index(['Text'])
-    if len(df) > 0:
-        st.write(df)
-    else:
-        st.write("No Entities found!")
+    # for ent in doc.ents:
+    #     data.append((ent.text,ent.label_))
+    # df = pd.DataFrame(data,columns=['Text','Entity']).set_index(['Text'])
+    # if len(df) > 0:
+    #     st.write(df)
+    # else:
+    #    st.write("No Entities found!")
+    st.markdown(displacy.render(doc, style='ent'),unsafe_allow_html=True)

@@ -14,4 +14,4 @@ count = 0
 
 if st.button('Increment'):
     count += 1
-    st.write('Clicked! Start Time {}; Count {}'.format(start_time, count))
+    st.write(f'Clicked! Start Time {start_time}; Count {count}')
