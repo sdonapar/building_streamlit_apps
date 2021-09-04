@@ -248,6 +248,9 @@ dependencies:
     - en-core-web-lg==3.1.0
     - en-core-web-md==3.1.0
     - en-core-web-sm==3.1.0
+    - plotly==5.3.1
     - simplejson==3.17.5
     - streamlit-aggrid==0.2.1
+    - streamlit-plotly-events==0.0.6
+    - tenacity==8.0.1
 prefix: /home/sasidhar/miniconda3/envs/pyconws
