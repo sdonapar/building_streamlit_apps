@@ -49,7 +49,10 @@ with col2:
         color = colors[int(point['curveNumber'])]
         records = df[df.species==color].iloc[[point['pointIndex']]].to_dict("records")
         data.extend(records)
-    df_selected = pd.DataFrame(data)
+    if data:
+        df_selected = pd.DataFrame(data)
+    else:
+        df_selected = pd.DataFrame(data=[],columns=df.columns)
     grid_options = get_table_configuration(df_selected)
     st.subheader("Selected Data")
     grid_response = AgGrid(
