@@ -18,6 +18,8 @@ my_name_default_value = "Your Name Please"
 
 my_container = st.container()
 
+st.write("This is some test")
+
 st.sidebar.title = "My First Working App"
 
 with my_container:

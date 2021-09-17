@@ -12,8 +12,8 @@ def load_model(name):
 def process_text(spacy_model,text):
     return spacy_model(text)
 
-#nlp = load_model("en_core_web_sm")
-nlp = spacy.load("en_core_web_md")
+nlp = load_model("en_core_web_sm")
+#nlp = spacy.load("en_core_web_md")
 
 st.title("NER Demo")
 
