@@ -5,13 +5,15 @@ Following are demonstrated in this app
 2. Metric widget
 """
 
+import streamlit as st
+import pandas as pd
+
 @st.cache
 def get_data(url):
     df_list = pd.read_html(url)
     return df_list
 
-import streamlit as st
-import pandas as pd
+
 
 st.write("# My First App")
 
